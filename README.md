@@ -4,10 +4,15 @@
 #### Se realizara un análisis para validar o refutar las siguientes hipótesis:
 
 -Las canciones con un mayor BPM (Beats Por Minuto) tienen más éxito en términos de cantidad de streams en Spotify.
+
 -Las canciones más populares en el ranking de Spotify también tienen un comportamiento similar en otras plataformas como Deezer.
+
 -La presencia de una canción en un mayor número de playlists se relaciona con un mayor número de streams.
+
 -Los artistas con un mayor número de canciones en Spotify tienen más streams.
+
 -Las características de la música influyen en el éxito en términos de cantidad de streams en Spotify.
+
 -Las el modo de la canción "Minor" o "Major" influye en la cantidad de reproducciones de la misma.
 
 ![Banner Inicio](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/477b6121-2b2c-4161-9746-c69fd11e7ed8)
