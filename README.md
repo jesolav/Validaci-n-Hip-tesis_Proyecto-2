@@ -555,4 +555,63 @@ FROM
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+### 🔎 Análisis Exploratorio en power bi
+
+1. Agrupar datos según variables categóricas
+   ![image](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/40e9239b-a2e2-4856-8fd8-bc63bbcf8d12)
+
+2. Visualizar las variables categóricas
+   ![image](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/40fb2f6e-bb2a-4957-b2d8-68870910c066)
+
+3. Aplicar medidas de tendencia central
+4. Visualizar distribución en histograma
+5. Aplicar medidas de dispersión	
+
+ ![image](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/e952f2b4-a46b-4d93-aca3-69653f83939f)
+
+6. Visualizar el comportamiento de los datos a lo largo del tiempo
+   ![image](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/37a2dbd7-8650-4a5a-83bb-9caa7aab0060)
+
+7. Calcular cuartiles, deciles o percentiles	
+Se utilizaron consultas en big query para cada caracteristica para dividir en cuartiles. Dejando el cuartil 1-2 como bajo, y 3-4 como alto.
+
+```sql
+CREATE OR REPLACE TABLE `proyecto-hipotesis-427017.hipotesis.tabla_acousticness` AS
+WITH Quartiles AS (
+  SELECT
+    track_id,
+    nombre variable,
+    streams,
+    NTILE(4) OVER (ORDER BY acousticness_percentage / 100) AS cuartil
+  FROM
+    `proyecto-hipotesis-427017.hipotesis.tabla_matriz`
+),
+categorias AS (
+  SELECT
+    nombre variable,
+    streams,
+    cuartil,
+    CASE
+      WHEN cuartil IN (1, 2) THEN 'bajo'
+      WHEN cuartil IN (3, 4) THEN 'alto'
+    END AS categoria
+  FROM
+    Quartiles
+)
+SELECT
+  categoria,
+  AVG(streams) AS promedio_streams
+FROM
+  categorias
+GROUP BY
+  categoria
+ORDER BY
+  categoria;
+```
+
+![image](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/b1cfc1a8-508d-4b57-bed3-41a9a5843b43)
+
+
+
+
 
