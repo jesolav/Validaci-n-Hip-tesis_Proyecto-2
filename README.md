@@ -31,34 +31,18 @@
 -
 -
 
-### 🔎 Procesamiento y preparación para analisis de datos 
-. [Procesamiento y preparación para analisis de datos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/6060b18be30d2ed3037561ba14222757aa3b241a/Procesamiento%20y%20preparci%C3%B3n%20para%20anlisis%20de%20datos
-)
+### 🔎 [Procesamiento y preparación para analisis de datos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos).
 
-
-1. Importación y Creación de Tablas en BigQuery:
-      Proyecto: proyecto-hipotesis
-      Tablas importadas: track_in_competition, track_in_spotify, track_technical_info
-
-2. [Identificación y Manejo de Valores Nulos:](https://github.com/jesolav/Nulos_hipotesis.git)
-2. [Identificación y Manejo de Valores Nulos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/main/1.%20Procesar%20y%20preparar%20base%20de%20datos/2.%20Identificar%20y%20manejar%20valores%20nulos.md)
-
-3. [Manejo de Valores Duplicados:](https://github.com/jesolav/duplicados_hipotesis.git)
-
-4. [Identificar y manejar datos fuera del alcance del análisis:](https://github.com/jesolav/datos-fuera-del-alcance_hipotesis.git)
-
-5. [Identificación y Manejo de Datos Discrepantes en variables categóricas:](https://github.com/jesolav/Identificaci-n-y-Manejo-de-Datos-Discrepantes-en-variables-categ-ricas_hipotesis.git)
-
-6. [Identificación y Manejo de Datos Discrepantes en variables numéricas:](https://github.com/jesolav/Identificaci-n-y-Manejo-de-Datos-Discrepantes-en-variables-num-ricas_hipotesis.git)
-
-
-7. [Comprobar y cambiar tipo de dato:](https://github.com/jesolav/-Comprobar-y-cambiar-tipo-de-dato_hipotesis.git)
-
-8. [Crear nuevas variables:](https://github.com/jesolav/Crear-nuevas-variables_hipotesis.git)
-
-9. [Unir Tablas:](https://github.com/jesolav/Crear-nuevas-variables_hipotesis.git)
-
-10. [Construir tablas auxiliares:](https://github.com/jesolav/Construir-tablas-auxiliares_hipotesis.git)
+1. [Importación y Creación de Tablas en BigQuery:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/1.%20Conectarimportar%20datos%20a%20otras%20herramientas.md#1-conectarimportar-datos-a-otras-herramientas)
+2. [Identificación y Manejo de Valores Nulos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/2.%20Identificar%20y%20manejar%20valores%20nulos.md)
+3. [Manejo de Valores Duplicados:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/3.%20Manejo%20Duplicados.md)
+4. [Identificar y manejar datos fuera del alcance del análisis:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/4.%20Identificar%20y%20manejar%20datos%20fuera%20del%20alcance%20del%20analisis.md)
+5. [Identificación y Manejo de Datos Discrepantes en variables categóricas:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/5.%20Identificacion%20y%20Manejo%20de%20Datos%20Discrepantes%20en%20variables%20categoricas.md)
+6. [Identificación y Manejo de Datos Discrepantes en variables numéricas:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/6.%20Identificacion%20y%20Manejo%20de%20Datos%20Discrepantes%20en%20Variables%20Numericas.md)
+7. [Comprobar y cambiar tipo de dato:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/7.%20Comprobar%20y%20cambiar%20tipo%20de%20dato.md)
+8. [Crear nuevas variables:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/8.%20Crear%20nuevas%20variables.md)
+9. [Unir Tablas:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/9.%20Unir%20Tablas.md)
+10. [Construir tablas auxiliares:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/10.%20Construir%20tablas%20auxiliares.md)
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
