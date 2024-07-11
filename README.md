@@ -41,7 +41,7 @@
       Tablas importadas: track_in_competition, track_in_spotify, track_technical_info
 
 2. [Identificación y Manejo de Valores Nulos:](https://github.com/jesolav/Nulos_hipotesis.git)
-
+2. [Identificación y Manejo de Valores Nulos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/main/1.%20Procesar%20y%20preparar%20base%20de%20datos/2.%20Identificar%20y%20manejar%20valores%20nulos.md)
 
 3. [Manejo de Valores Duplicados:](https://github.com/jesolav/duplicados_hipotesis.git)
 
