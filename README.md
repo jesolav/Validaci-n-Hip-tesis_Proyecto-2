@@ -31,7 +31,10 @@
 -
 -
 
-### 🔎 Procesamiento y preparación para anlisis de datos
+### 🔎 Procesamiento y preparación para analisis de datos 
+. [Procesamiento y preparación para analisis de datos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/6060b18be30d2ed3037561ba14222757aa3b241a/Procesamiento%20y%20preparci%C3%B3n%20para%20anlisis%20de%20datos
+)
+
 
 1. Importación y Creación de Tablas en BigQuery:
       Proyecto: proyecto-hipotesis
