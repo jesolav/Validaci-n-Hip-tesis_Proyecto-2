@@ -47,63 +47,39 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 🔎 Análisis Exploratorio en power bi
+### 🔎[Análisis Exploratorio en Power Bi:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/c7893cc200d8e0ee01b9d5c5544266f23a79e4be/2.%20Analisis%20Exploratorio)
 
-1. Agrupar datos según variables categóricas
-   ![image](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/40e9239b-a2e2-4856-8fd8-bc63bbcf8d12)
+1. [Agrupar datos según variables categóricas:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/1.%20Agrupar%20datos%20segun%20variables%20categoricas.md)
 
-2. Visualizar las variables categóricas
-   ![image](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/40fb2f6e-bb2a-4957-b2d8-68870910c066)
+2. [Visualizar las variables categóricas:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/2.%20Visualizar%20las%20variables%20categoricas.md)
 
-3. Aplicar medidas de tendencia central
-4. Visualizar distribución en histograma
-5. Aplicar medidas de dispersión	
+3. [Aplicar medidas de tendencia central:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/3.%20Medidas%20Tendencia%20Central%2C%20Histograma.md)
 
- ![image](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/e952f2b4-a46b-4d93-aca3-69653f83939f)
+4. [Visualizar distribución en histograma:]()
 
-6. Visualizar el comportamiento de los datos a lo largo del tiempo
-   ![image](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/37a2dbd7-8650-4a5a-83bb-9caa7aab0060)
+5. [Aplicar medidas de dispersión:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/5.%20Medidas%20Tendencia%20Central%2C%20Histograma.md)
 
-7. Calcular cuartiles, deciles o percentiles	
-Se utilizaron consultas en big query para cada caracteristica para dividir en cuartiles. Dejando el cuartil 1-2 como bajo, y 3-4 como alto.
+5. [Visualizar el comportamiento de los datos a lo largo del tiempo:](https://github.com/jesolav/Validaci-n-Hip-tesis_P1. royecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/6.%20Comportamiento%20en%20el%20tiempo.md)
 
-```sql
-CREATE OR REPLACE TABLE `proyecto-hipotesis-427017.hipotesis.tabla_acousticness` AS
-WITH Quartiles AS (
-  SELECT
-    track_id,
-    nombre variable,
-    streams,
-    NTILE(4) OVER (ORDER BY acousticness_percentage / 100) AS cuartil
-  FROM
-    `proyecto-hipotesis-427017.hipotesis.tabla_matriz`
-),
-categorias AS (
-  SELECT
-    nombre variable,
-    streams,
-    cuartil,
-    CASE
-      WHEN cuartil IN (1, 2) THEN 'bajo'
-      WHEN cuartil IN (3, 4) THEN 'alto'
-    END AS categoria
-  FROM
-    Quartiles
-)
-SELECT
-  categoria,
-  AVG(streams) AS promedio_streams
-FROM
-  categorias
-GROUP BY
-  categoria
-ORDER BY
-  categoria;
-```
+6. [Calcular cuartiles, deciles o percentiles:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/7.%20Calcular%20cuartiles%2C%20deciles%20o%20percentiles.md)
 
-![image](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/b1cfc1a8-508d-4b57-bed3-41a9a5843b43)
+7.[Calcular correlación entre variables](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/8.%20Calcular%20correlacion%20entre%20variables.md)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+### 🔎[Aplicar técnica de análisis:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis)
 
+1. [Aplicar segmentación](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/1.%20Aplicar%20segmentaci%C3%B3n.md)
+2. [Validar Hipótesis:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis)
 
+   [Hipótesis 1](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%201.md)
 
+   [Hipótesis 2](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%202.md)
+
+   [Hipótesis 3](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%203.md)
+
+   [Hipótesis 4](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%204.md)
+
+   [Hipótesis 5](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%205.md)
+
+   
