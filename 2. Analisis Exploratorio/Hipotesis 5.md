@@ -1,93 +1,13 @@
-## *Hipótesis 5: Las características de la canción influyen en el éxito en términos de streams en Spotify*
+# 4. Visualizar Distribución
 
-*Coeficiente correlación deezer_charts y spotify_charts:*
+![image](https://github.com/user-attachments/assets/27acc0f8-372e-415c-96e9-0cf5bf66c37e)
 
-![image](https://github.com/user-attachments/assets/a582295c-81ca-4b7d-8d97-1eb7b5d7b68b)
+Los histogramas muestran las distribuciones de frecuencia de las variables 'streams', 'total_playlists' y 'bpm' en un conjunto de datos de canciones.
 
-Consulta en sql:
-```sql
-SELECT
- CORR(danceability_percentage, streams) AS danceability_corr,
- CORR(valence_percentage, streams) AS valence_corr,
- CORR(energy_percentage, streams) AS energy_corr,
- CORR(acousticness_percentage, streams) AS acousticness_corr,
- CORR(instrumentalness_percentage, streams) AS instrumentalness_corr,
- CORR(liveness_percentage, streams) AS liveness_corr,
- CORR(speechiness_percentage, streams) AS speechiness_corr
-FROM
- `proyecto-hipotesis-427017.hipotesis.tabla_matriz`;
-```
+-**Streams:** La mayoría de las canciones tienen un número bajo de reproducciones, con una gran concentración en el rango inferior y una cola larga a la derecha. Esto indica que hay algunas canciones muy populares con un gran número de reproducciones, mientras que la mayoría de las canciones tienen un éxito moderado o bajo.
 
-Todos los coeficientes son cercanos a cero, lo que indica una correlación muy débil o nula entre cada característica y el número de streams.
+-**Total Playlists:** La distribución de las canciones en las playlists es similar a la de los streams, con la mayoría de las canciones apareciendo en pocas playlists y unas pocas canciones muy populares presentes en muchas playlists.
 
-* **Correlaciones negativas débiles:** Danceability, energy, valence, instrumentalness, liveness y speechiness tienen correlaciones negativas débiles con los streams. Esto sugiere una ligera tendencia a que las canciones con valores más altos en estas características tengan menos streams, pero la relación es muy débil.
-* **Correlación casi nula:** La correlación entre acousticness y streams es prácticamente nula, lo que indica que no hay relación entre esta característica y el número de reproducciones.
+-**BPM:** La distribución del BPM (beats por minuto) parece ser más uniforme, con una ligera concentración en el rango de 120-140 BPM, que es un rango común para la música popular. Esto sugiere que la mayoría de las canciones en el conjunto de datos tienen un tempo moderado.
 
-*Lo graficamos en power bi con python*
-
-```phyton
-import matplotlib.pyplot as plt
-import numpy as np
-
-# Lista de características a analizar
-features = [
-    'danceability_percentage', 'valence_percentage', 'energy_percentage',
-    'acousticness_percentage', 'instrumentalness_percentage', 'liveness_percentage',
-    'speechiness_percentage'
-]
-
-# Colores y estilo personalizado (tomados del primer gráfico)
-colores = {
-    'fondo_figura': '#000000',
-    'fondo_ejes': '#896FF780', 
-    'puntos': '#9071CE',
-    'linea_tendencia': 'white',
-    'texto': 'white'
-}
-
-# Configuración de la figura
-plt.figure(figsize=(15, 15), facecolor=colores['fondo_figura'])  # Fondo de la figura
-
-# Gráficos individuales
-for i, feature in enumerate(features):
-    ax = plt.subplot(4, 2, i + 1, facecolor=colores['fondo_ejes'])  # Fondo de los ejes
-
-    # Scatter plot con personalización
-    plt.scatter(dataset[feature], dataset['streams'], alpha=0.5, color=colores['puntos'], edgecolors='black')
-
-    # Línea de tendencia
-    z = np.polyfit(dataset[feature], dataset['streams'], 1)
-    p = np.poly1d(z)
-    plt.plot(dataset[feature], p(dataset[feature]), linestyle='--', color=colores['linea_tendencia'])
-
-    # Configuración de textos, etiquetas y ejes
-    plt.title(f'Relación entre {feature} y Streams', fontsize=14, color=colores['texto'], fontname='Calibri')
-    plt.xlabel(feature, color=colores['texto'], fontname='Calibri')
-    plt.ylabel('Streams', color=colores['texto'], fontname='Calibri')
-    plt.xticks(color=colores['texto'], fontname='Calibri')
-    plt.yticks(color=colores['texto'], fontname='Calibri')
-    ax.spines['bottom'].set_color(colores['texto'])  # Color de los bordes de los ejes
-    ax.spines['top'].set_color(colores['texto'])
-    ax.spines['right'].set_color(colores['texto'])
-    ax.spines['left'].set_color(colores['texto'])
-    ax.tick_params(axis='x', colors=colores['texto'])  # Color de las marcas de los ejes
-    ax.tick_params(axis='y', colors=colores['texto'])
-    plt.grid(True, alpha=0.3) 
-
-# Ajustar el diseño para evitar superposiciones
-plt.tight_layout()
-plt.show()
-```
-
-![image](https://github.com/user-attachments/assets/d5dc0839-69a6-49e8-968d-6ecbad3a289d)
-
-
-**Conclusión:**
-
-Basándonos en los gráficos y los coeficientes de correlación, no podemos confirmar la Hipótesis 5. Los datos no muestran una influencia significativa de las características de las canciones en el éxito en términos de streams en Spotify. Es probable que otros factores, como la popularidad del artista, el género musical, la promoción y el marketing, tengan un impacto más significativo en el número de reproducciones.
-
-**Conclusión:**
-
-* **Limitaciones del análisis:** Este análisis se basa en un conjunto de datos específico y en correlaciones lineales. Es posible que existan relaciones no lineales o interacciones entre las características que no se hayan considerado.
-Posibles explicaciones: La falta de correlación podría deberse a que las preferencias de los oyentes son muy diversas y no se pueden explicar únicamente por las características musicales de las canciones.
-* **Investigación adicional:** Sería interesante explorar otros factores que podrían influir en el éxito de las canciones en Spotify, como los mencionados anteriormente (popularidad del artista, género musical, promoción, etc.).
+En general, los histogramas revelan una distribución desigual en la popularidad de las canciones y su presencia en las playlists, con unos pocos éxitos destacados y una gran cantidad de canciones con un éxito moderado o bajo. En cuanto al BPM, la distribución es más uniforme, lo que sugiere que el tempo no es un factor determinante en la popularidad de una canción.
