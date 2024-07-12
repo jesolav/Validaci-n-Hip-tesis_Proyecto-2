@@ -1,64 +1,29 @@
-## *Hipótesis 3: La presencia de una canción en un mayor número de playlists se relaciona con un mayor número de streams*
+**Conclusiones del Análisis:**
 
-*Coeficiente correlación total playlists y streams:*
+1. **BPM y Éxito:** No encontramos evidencia de que un mayor BPM (Beats por minuto) se traduzca en más reproducciones en Spotify. Por lo tanto, la discográfica no debería priorizar este factor al seleccionar canciones para el nuevo artista.
 
-![image](https://github.com/user-attachments/assets/23325d7f-228d-463e-9856-45d2b08ad7af)
+2. **Popularidad entre Plataformas:** Existe una correlación moderada entre la popularidad en Spotify y Deezer. Esto sugiere que el éxito en una plataforma puede indicar un potencial similar en otra, pero no garantiza el mismo nivel de popularidad.
 
-Consulta en sql:
-```sql 
-SELECT CORR(total_playlists, streams) AS correlation_value
-FROM `proyecto-hipotesis-427018.hipotesis.tabla_matriz`
-```
+3. **Playlists y Streams:** La presencia en playlists es un factor importante para el éxito en Spotify. Las canciones que aparecen en más playlists tienden a tener más reproducciones.
 
-El coeficiente de correlación de 0.6047 confirma la relación positiva observada en el gráfico. Este valor indica una correlación moderadamente fuerte, lo que sugiere que la presencia en playlists es un predictor razonablemente bueno del número de streams, pero no el único factor determinante.
+4. **Número de Canciones y Streams:** Existe una fuerte correlación entre el número de canciones de un artista en Spotify y su número total de reproducciones. Esto indica que tener más canciones disponibles aumenta las posibilidades de obtener más streams.
 
-*Lo graficamos en power bi con python*
+5. **Características de la Canción y Éxito:** No encontramos una relación significativa entre las características de las canciones (como danceability, energy, etc.) y su éxito en términos de reproducciones. Otros factores, como la promoción y el marketing, pueden tener un mayor impacto.
 
-```phyton
-import matplotlib.pyplot as plt
-import numpy as np
+**Recomendaciones para la Discográfica y el Nuevo Artista:**
 
-# Personalización de colores y estilo
-fig, ax = plt.subplots(figsize=(10, 6), facecolor='#000000')
-ax.set_facecolor('#896FF780')
+1. **Priorizar la Inclusión en Playlists:** La discográfica debería enfocar sus esfuerzos en conseguir que las canciones del nuevo artista sean incluidas en playlists populares de Spotify. Esto podría aumentar significativamente su visibilidad y número de reproducciones.
 
-# Cálculo de la línea de tendencia
-z = np.polyfit(dataset['total_playlists'], dataset['streams'], 1)
-p = np.poly1d(z)
+2. **Lanzar más Canciones:** El análisis sugiere que lanzar más canciones puede aumentar el número total de reproducciones del artista. La discográfica podría considerar lanzar un álbum completo o varios sencillos en lugar de un solo sencillo.
 
-# Gráfico de dispersión
-plt.scatter(dataset['total_playlists'], dataset['streams'], alpha=0.5, color='#9071CE')
+3. **No Obsesionarse con el BPM:** El BPM no parece ser un factor determinante en el éxito de una canción en Spotify. La discográfica y el artista deberían centrarse en otros aspectos de la música, como la calidad de la composición, la producción y la letra.
 
-# Línea de tendencia
-plt.plot(dataset['total_playlists'], p(dataset['total_playlists']), linestyle='--', color='white')
+4. **Considerar otras Plataformas:** Si bien el éxito en Spotify puede indicar un potencial en Deezer, la discográfica no debería descuidar otras plataformas de streaming. Es importante diversificar la presencia del artista en diferentes plataformas para llegar a un público más amplio.
 
-# Configuración de textos y etiquetas
-plt.title('Relación entre Popularidad en Total Playlists y Streams', fontsize=18, color='white', fontname='Calibri')
-plt.xlabel('total_playlists', color='white', fontname='Calibri')
-plt.ylabel('Streams', color='white', fontname='Calibri')
+5. **Marketing y Promoción:** Las características de las canciones no garantizan el éxito por sí solas. La discográfica debería invertir en estrategias de marketing y promoción para aumentar la visibilidad del nuevo artista y sus canciones.
 
-# Configuración de ejes y cuadrícula
-plt.xlim([dataset['total_playlists'].min(), dataset['total_playlists'].max()])
-plt.ylim([dataset['streams'].min(), dataset['streams'].max()])
-plt.xticks(color='white', fontname='Calibri')
-plt.yticks(color='white', fontname='Calibri')
-plt.grid(True, alpha=0.3)
+**Recomendaciones adicionales:**
 
-# Mostrar el gráfico
-plt.show()
-```
-
-![image](https://github.com/user-attachments/assets/dd394b0f-f5db-4867-9073-fba651deb79e)
-
-
-
-**Análisis del gráfico:**
-
-* **Tendencia positiva**: El gráfico de dispersión muestra una clara tendencia ascendente, lo que indica que a medida que aumenta el número de playlists en las que aparece una canción, también tiende a aumentar su número de streams.
-* **Dispersión**: Aunque hay una tendencia general, también hay una dispersión considerable de los puntos alrededor de la línea de tendencia. Esto significa que si bien hay una relación positiva, no es perfecta y hay excepciones. Algunas canciones pueden tener muchos streams sin estar en muchas playlists, y viceversa.
-
-**Conclusión:**
-
-Basándonos en el gráfico y el coeficiente de correlación, podemos concluir que la tercera hipótesis es válida: existe una relación positiva moderadamente fuerte entre la presencia de una canción en playlists y su número de streams. Esto significa que las canciones que aparecen en más playlists tienden a tener más streams, aunque hay excepciones y otros factores también influyen en la popularidad de una canción.
-
-
+* **Redes Sociales:** Utilizar las redes sociales para conectar con los fans, promocionar la música y crear una comunidad en torno al artista.
+* **Conciertos y Eventos:** Organizar conciertos y eventos en vivo puede ayudar a generar interés y aumentar la base de fans del artista.
+* **Análisis Continuo:** La discográfica debería seguir analizando los datos de Spotify y otras plataformas para identificar tendencias y ajustar sus estrategias en consecuencia.
