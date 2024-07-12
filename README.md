@@ -59,11 +59,11 @@
 
 5. [Aplicar medidas de dispersión:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/5.%20Medidas%20Tendencia%20Central%2C%20Histograma.md)
 
-5. [Visualizar el comportamiento de los datos a lo largo del tiempo:](https://github.com/jesolav/Validaci-n-Hip-tesis_P1. royecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/6.%20Comportamiento%20en%20el%20tiempo.md)
+6. [Visualizar el comportamiento de los datos a lo largo del tiempo:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/c80b496a15a0bc34e6e087dfd2af3231192d1d94/2.%20Analisis%20Exploratorio/6.%20Comportamiento%20en%20el%20tiempo.md)
 
-6. [Calcular cuartiles, deciles o percentiles:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/7.%20Calcular%20cuartiles%2C%20deciles%20o%20percentiles.md)
+7. [Calcular cuartiles, deciles o percentiles:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/7.%20Calcular%20cuartiles%2C%20deciles%20o%20percentiles.md)
 
-7.[Calcular correlación entre variables](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/8.%20Calcular%20correlacion%20entre%20variables.md)
+8.[Calcular correlación entre variables](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/8.%20Calcular%20correlacion%20entre%20variables.md)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
