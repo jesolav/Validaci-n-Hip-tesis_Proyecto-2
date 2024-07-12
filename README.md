@@ -146,5 +146,5 @@ El dataset contiene datos sobre las canciones más reproducidas en Spotify en 20
 
 ### 📰 [Presentación](https://docs.google.com/presentation/d/1x2_PyCh8oEQtllJ6JSGCokPfodCse9bDLlxOiNILTCY/edit?usp=sharing)
 
-### 🧩 [Conclusiones y Recomendaciones](https://github.com/jesolav/Validacion_Hipotesis_Proyecto_2_Laboratoria/blob/59cc56083b0f57cccb427e4b6755dd5f9ca5c45e/Conclusiones%20y%20Recomendaciones/Conclusiones%20y%20Recomendaciones)
+### 🧩 [Conclusiones y Recomendaciones](https://github.com/jesolav/Validacion_Hipotesis_Proyecto_2_Laboratoria/blob/501156e0312f89fd7f435c83293669fe4884e2f8/Conclusiones%20y%20Recomendaciones/Conclusiones.md)
 
