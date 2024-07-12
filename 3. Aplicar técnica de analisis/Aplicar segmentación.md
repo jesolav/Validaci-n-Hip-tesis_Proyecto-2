@@ -1,40 +1,4 @@
-# 7. Calcular cuartiles, deciles o percentiles
-
-Se utilizaron consultas en big query para cada caracteristica para dividir en cuartiles. Dejando el cuartil 1-2 como bajo, y 3-4 como alto.
-
-```sql
-CREATE OR REPLACE TABLE `proyecto-hipotesis-427017.hipotesis.tabla_acousticness` AS
-WITH Quartiles AS (
-  SELECT
-    track_id,
-    nombre variable,
-    streams,
-    NTILE(4) OVER (ORDER BY acousticness_percentage / 100) AS cuartil
-  FROM
-    `proyecto-hipotesis-427017.hipotesis.tabla_matriz`
-),
-categorias AS (
-  SELECT
-    nombre variable,
-    streams,
-    cuartil,
-    CASE
-      WHEN cuartil IN (1, 2) THEN 'bajo'
-      WHEN cuartil IN (3, 4) THEN 'alto'
-    END AS categoria
-  FROM
-    Quartiles
-)
-SELECT
-  categoria,
-  AVG(streams) AS promedio_streams
-FROM
-  categorias
-GROUP BY
-  categoria
-ORDER BY
-  categoria;
-```
+# 1. Aplicar segmentación
 
 
 ![image](https://github.com/jesolav/Nulos_hipotesis/assets/172732181/4d51c38c-5ec3-4f9e-a5a6-3a4c149959c1)
