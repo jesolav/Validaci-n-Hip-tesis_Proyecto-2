@@ -27,8 +27,68 @@
 - Power BI
 
 ### 📄Conjunto de datos
--
--
+El dataset contiene datos sobre las canciones más reproducidas en Spotify en 2023. Los datos se dividen en 3 tablas, la primera sobre el rendimiento de cada canción en Spotify, la segunda con el rendimiento en otras plataformas como Deezer o Apple Music, y la tercera con las características de estas canciones.
+
+#### **Trackinspotify**
+
+-track_id: Identificador único de la canción. Es un número entero de 7 dígitos que no se repite
+
+-track_name: Nombre de la canción
+
+-artist(s)_name: Nombre del artista(s) de la canción
+
+-artist_count: Número de artistas que contribuyen a la canción.
+
+-released_year: Año en que se lanzó la canción.
+
+-released_month: Mes en el que se lanzó la canción.
+
+-released_day: Día del mes en que se lanzó la canción.
+
+-inspotifyplaylists: Número de listas de reproducción de Spotify en las que está incluida la canción
+
+-inspotifycharts: Presencia y ranking de la canción en las listas de Spotify
+
+-streams: Número total de transmisiones en Spotify. Representa la cantidad de veces que la canción fue escuchada.
+
+#### **Trackincompetition**
+
+-track_id: Identificador único de la canción. Es un número entero de 7 dígitos que no se repite
+
+-inappleplaylists: número de listas de reproducción de Apple Music en las que está incluida la canción
+
+-inapplecharts: Presencia y rango de la canción en las listas de Apple Music
+
+-indeezerplaylists: Número de listas de reproducción de Deezer en las que está incluida la canción
+
+-indeezercharts: Presencia y rango de la canción en las listas de Deezer
+
+-inshazamcharts: Presencia y rango de la canción en las listas de Shazam
+
+
+#### **Tracktechnicalinfo**
+
+-track_id: Identificador único de la canción. Es un número entero de 7 dígitos que no se repite
+
+-bpm: Pulsaciones por minuto, una medida del tiempo de la canción.
+
+-key: Clave musical de la canción
+
+-mode: Modo de la canción (mayor o menor)
+
+-danceability_%: Porcentaje que indica qué tan adecuada es la canción para bailar
+
+-valence_: Positividad del contenido musical de la canción.
+
+-energy_: Nivel de energía percibido de la canción.
+
+-acusticness_: Cantidad de sonido acústico en la canción.
+
+-instrumentality_: Cantidad de contenido instrumental en la canción.
+
+-liveness_: Presencia de elementos de actuación en vivo.
+
+-speechiness_: Cantidad de palabras habladas en la canción.
 
 ### 💻 [Procesamiento y preparación para analisis de datos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos).
 
