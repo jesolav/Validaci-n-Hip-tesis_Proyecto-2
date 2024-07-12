@@ -1,8 +1,5 @@
 3. Aplicar medidas de tendencia central
 
-
-![image](https://github.com/user-attachments/assets/370b002d-9b97-4303-baa0-5df305b5122e)
-
 4. Visualizar distribución en histograma
 
 5. Aplicar medidas de dispersión
