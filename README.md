@@ -13,7 +13,6 @@
 
 -Las características de la música influyen en el éxito en términos de cantidad de streams en Spotify.
 
--Las el modo de la canción "Minor" o "Major" influye en la cantidad de reproducciones de la misma.
 
 ![Banner Inicio](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/assets/172732181/477b6121-2b2c-4161-9746-c69fd11e7ed8)
 
