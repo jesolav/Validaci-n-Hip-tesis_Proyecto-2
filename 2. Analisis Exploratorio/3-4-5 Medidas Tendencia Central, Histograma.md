@@ -1,5 +1,3 @@
-3. Aplicar medidas de tendencia central
-
 4. Visualizar distribución en histograma
 
 5. Aplicar medidas de dispersión
