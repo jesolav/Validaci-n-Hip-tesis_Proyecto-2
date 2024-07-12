@@ -1,67 +1,67 @@
-# 7. Calcular cuartiles, deciles o percentiles
+# 2. Validar hipótesis
 
-Se utilizaron consultas en big query para cada caracteristica para dividir en cuartiles. Dejando el cuartil 1-2 como bajo, y 3-4 como alto.
+## *Hipótesis 1: Las canciones con un mayor BPM (Beats por minuto) tienen más éxito en términos de streams en Spotify*
 
-```sql
-CREATE OR REPLACE TABLE `proyecto-hipotesis-427017.hipotesis.tabla_acousticness` AS
-WITH Quartiles AS (
-  SELECT
-    track_id,
-    nombre variable,
-    streams,
-    NTILE(4) OVER (ORDER BY acousticness_percentage / 100) AS cuartil
-  FROM
-    `proyecto-hipotesis-427017.hipotesis.tabla_matriz`
-),
-categorias AS (
-  SELECT
-    nombre variable,
-    streams,
-    cuartil,
-    CASE
-      WHEN cuartil IN (1, 2) THEN 'bajo'
-      WHEN cuartil IN (3, 4) THEN 'alto'
-    END AS categoria
-  FROM
-    Quartiles
-)
+*Coeficiente correlación bpm y streams:*
+
+![image](https://github.com/user-attachments/assets/d7f2c3b9-c5db-4e03-be2b-f58b8e0f46a4)
+
+Consulta en sql:
+```sql 
 SELECT
-  categoria,
-  AVG(streams) AS promedio_streams
+ CORR(BPM, streams) AS correlation_value
 FROM
-  categorias
-GROUP BY
-  categoria
-ORDER BY
-  categoria;
+ `proyecto-hipotesis-427018.hipotesis.tabla_matriz`
+```
+
+El valor sugiere una correlación negativa muy débil entre los BPM de una canción y la cantidad de streams. En otras palabras, parece que no hay una relación significativa entre el ritmo de una canción y su éxito en términos de streams. 
+
+*Lo graficamos en power bi con python*
+
+```phyton
+# El código siguiente, que crea un dataframe y quita las filas duplicadas, siempre se ejecuta y actúa como un preámbulo del script:
+# dataset = pandas.DataFrame(total_playlists, streams)
+# dataset = dataset.drop_duplicates()
+# Pegue o escriba aquí el código de script:
+import matplotlib.pyplot as plt
+# Los datos son cargados automáticamente por Power BI en el dataframe 'dataset'
+# Crear el gráfico de dispersión
+plt.figure(figsize=(10, 6))
+plt.scatter(dataset['bpm'], dataset['streams'], alpha=0.5)
+plt.title('Relación entre bpm y Streams')
+plt.xlabel('bpm')
+plt.ylabel('Streams')
+plt.grid(True)
+plt.show()
 ```
 
 
-![image](https://github.com/jesolav/Nulos_hipotesis/assets/172732181/4d51c38c-5ec3-4f9e-a5a6-3a4c149959c1)
+![image](https://github.com/user-attachments/assets/34645e3a-c1ef-405c-b98c-0defa53554ad)
 
 
-La imagen muestra la suma de los promedios de streams de canciones clasificadas en categorías "alto" y "bajo" para diferentes características musicales. A partir de estos datos, podemos analizar la relación entre estas características y el éxito musical, medido por el promedio de streams.
+El gráfico de dispersión muestra la relación entre el BPM (Beats por minuto) de una canción y su número de reproducciones (streams) en Spotify. Cada punto en el gráfico representa una canción, con su posición en el eje x indicando su BPM y su posición en el eje y indicando su número de reproducciones.
 
-## Análisis por característica:
+**Análisis del gráfico:**
 
--**Instrumentalness (Instrumentalidad)**: Las canciones con bajo contenido instrumental (mayor presencia de voces) tienen un promedio de streams considerablemente mayor que aquellas con alto contenido instrumental. Esto sugiere que las canciones con letras y voces tienden a ser más populares y exitosas en términos de reproducciones.
+* **No hay una relación clara:** Los puntos están dispersos por todo el gráfico, sin un patrón evidente que sugiera una relación lineal entre el BPM y las reproducciones. Esto significa que canciones con BPM alto y bajo pueden tener tanto un número alto como bajo de reproducciones.
+  
+* **Mayor densidad en BPM bajos:** Hay una mayor concentración de canciones con BPM entre 80 y 120, lo que indica que este rango de tempo es más común en el conjunto de datos. Sin embargo, esto no significa que las canciones en este rango tengan necesariamente más reproducciones.
 
--**Energy (Energía)**: Las canciones con alta energía tienen un promedio de streams ligeramente superior a las de baja energía. Esto indica que las canciones más enérgicas y animadas pueden ser más atractivas para los oyentes y generar más reproducciones.
+**Correlación:**
 
--**Valence (Valencia)**: Las canciones con valencia alta (más positivas y alegres) tienen un promedio de streams similar a las de valencia baja (más negativas y tristes). Esto sugiere que la valencia no es un factor determinante en el éxito de una canción en términos de reproducciones.
+La correlación de -0.0023 confirma lo que se observa en el gráfico: prácticamente no hay relación lineal entre el BPM y las reproducciones. Un valor tan cercano a cero indica que el BPM no es un factor determinante en el éxito de una canción en términos de reproducciones en Spotify.
 
--**Acousticness (Acústica)**: Las canciones con baja acústica (menos instrumentos acústicos) tienen un promedio de streams ligeramente superior a las de alta acústica. Esto podría indicar que las canciones con sonidos más modernos y electrónicos pueden ser más populares en plataformas de streaming.
+**Conclusión:**
 
--**Liveness (Sonido en vivo)**: Las canciones con bajo sonido en vivo (grabadas en estudio) tienen un promedio de streams ligeramente superior a las de alto sonido en vivo. Esto sugiere que la mayoría de los oyentes prefieren canciones con una producción de estudio más pulida.
-
--**Danceability (Bailabilidad)**: Las canciones con baja bailabilidad tienen un promedio de streams ligeramente superior a las de alta bailabilidad. Esto podría indicar que, en general, las canciones menos bailables son más populares en plataformas de streaming, aunque la diferencia no es muy significativa.
-
--**Speechiness (Presencia de voz hablada)**: Las canciones con baja presencia de voz hablada tienen un promedio de streams considerablemente mayor que aquellas con alta presencia de voz hablada. Esto sugiere que las canciones con predominio de canto son más populares y exitosas en términos de reproducciones.
+Basándonos en este gráfico y en el valor de correlación, podemos rechazar la hipótesis 1: "Las canciones con un mayor BPM (Beats por minuto) tienen más éxito en términos de streams en Spotify". Los datos no respaldan esta afirmación, ya que no se observa una relación significativa entre el BPM y el número de reproducciones.
 
 
-## Relación con el éxito musical:
+------------------------------------------------------------------------------------------------------
 
-En general, podemos observar que las características que parecen tener una mayor influencia en el éxito musical (medido por el promedio de streams) son la instrumentalidad, la presencia de voz hablada y, en menor medida, la energía y la acústica. 
-Las canciones con bajo contenido instrumental, baja presencia de voz hablada, alta energía y baja acústica tienden a tener un mayor número de reproducciones.
+## *Hipótesis 2: Las canciones más populares en el ranking de Spotify también tienen un comportamiento similar en otras plataformas como Deezer*
 
-Sin embargo, es importante tener en cuenta que estas son tendencias generales y que existen muchos otros factores que pueden influir en el éxito de una canción, como la calidad de la composición, la promoción y marketing, y la conexión con el público. Además, las preferencias de los oyentes pueden variar según el género musical y otros factores individuales.
+*Coeficiente correlación deezer_charts y spotify_charts:*
+
+
+Consulta en sql:
+
