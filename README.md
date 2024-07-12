@@ -20,8 +20,7 @@
 ### 🤜🤛 Equipo: Camila Maluenda - Jenifer Soto
 
 ## ⚙️ Herramientas y Recursos
-- Bigquery
-- SQL
+- Bigquery / SQL
 - Python
 - Google Slides
 - Power BI
