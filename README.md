@@ -108,7 +108,7 @@ El dataset contiene datos sobre las canciones más reproducidas en Spotify en 20
 
 ### 🔎[Análisis Exploratorio en Power Bi:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/c7893cc200d8e0ee01b9d5c5544266f23a79e4be/2.%20Analisis%20Exploratorio)
 
-1. [Agrupar datos según variables categóricas:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/1.%20Agrupar%20datos%20segun%20variables%20categoricas.md)
+1. [Agrupar datos según variables categóricas:](https://github.com/jesolav/Validacion_Hipotesis_Proyecto_2_Laboratoria/blob/501156e0312f89fd7f435c83293669fe4884e2f8/2.%20Analisis%20Exploratorio/1.%20Agrupar%20datos%20segun%20variables%20categoricas.md)
 
 2. [Visualizar las variables categóricas:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/2.%20Visualizar%20las%20variables%20categoricas.md)
 
