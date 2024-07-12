@@ -31,7 +31,7 @@
 -
 -
 
-### 🔎 [Procesamiento y preparación para analisis de datos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos).
+### 💻 [Procesamiento y preparación para analisis de datos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos).
 
 1. [Importación y Creación de Tablas en BigQuery:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/1.%20Conectarimportar%20datos%20a%20otras%20herramientas.md#1-conectarimportar-datos-a-otras-herramientas)
 2. [Identificación y Manejo de Valores Nulos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/2.%20Identificar%20y%20manejar%20valores%20nulos.md)
@@ -67,25 +67,25 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 🔎[Aplicar técnica de análisis:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis)
+### 📈[Aplicar técnica de análisis:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis)
 
 1. [Aplicar segmentación](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/1.%20Aplicar%20segmentaci%C3%B3n.md)
 2. [Validar Hipótesis:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis)
 
-   [Hipótesis 1](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%201.md)
+   ▫️ [Hipótesis 1](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%201.md)
 
-   [Hipótesis 2](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%202.md)
+   ▫️ [Hipótesis 2](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%202.md)
 
-   [Hipótesis 3](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%203.md)
+   ▫️ [Hipótesis 3](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%203.md)
 
-   [Hipótesis 4](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%204.md)
+   ▫️ [Hipótesis 4](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%204.md)
 
-   [Hipótesis 5](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%205.md)
+   ▫️ [Hipótesis 5](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%205.md)
 
    
 
-### 🔎 [Dashboard](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/b3cb28c4dbe7f099fe7eb7c714929595bfc9b9fa/Dashboard/Dashboard.png)
+### 💡 [Dashboard](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/b3cb28c4dbe7f099fe7eb7c714929595bfc9b9fa/Dashboard/Dashboard.png)
 
-### 🔎 [Presentació]()
+### 📰 [Presentación](https://docs.google.com/presentation/d/1x2_PyCh8oEQtllJ6JSGCokPfodCse9bDLlxOiNILTCY/edit?usp=sharing)
 
 
