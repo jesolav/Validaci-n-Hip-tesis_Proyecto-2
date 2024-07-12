@@ -114,7 +114,7 @@ El dataset contiene datos sobre las canciones más reproducidas en Spotify en 20
 
 3. [Aplicar medidas de tendencia central:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/3.%20Medidas%20Tendencia%20Central%2C%20Histograma.md)
 
-4. [Visualizar distribución en histograma:]()
+4. [Visualizar distribución en histograma:](https://github.com/jesolav/Validacion_Hipotesis_Proyecto_2_Laboratoria/blob/9ab7ab7c1dd68b969a40d8f9f29e793a642e9a04/2.%20Analisis%20Exploratorio/4.%20Visualizar%20Distribucion.md)
 
 5. [Aplicar medidas de dispersión:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/2.%20Analisis%20Exploratorio/5.%20Medidas%20Tendencia%20Central%2C%20Histograma.md)
 
