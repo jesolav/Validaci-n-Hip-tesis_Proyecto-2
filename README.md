@@ -82,10 +82,10 @@
 
    ▫️ [Hipótesis 5](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/4bddd705f73a0c8db6236dc3598a2f7144ead456/3.%20Aplicar%20t%C3%A9cnica%20de%20analisis/2.%20Validar%20Hipotesis/Hipotesis%205.md)
 
-   
 
 ### 💡 [Dashboard](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/b3cb28c4dbe7f099fe7eb7c714929595bfc9b9fa/Dashboard/Dashboard.png)
 
 ### 📰 [Presentación](https://docs.google.com/presentation/d/1x2_PyCh8oEQtllJ6JSGCokPfodCse9bDLlxOiNILTCY/edit?usp=sharing)
 
+### 🧩 [Conclusiones y Recomendaciones](https://docs.google.com/presentation/d/1x2_PyCh8oEQtllJ6JSGCokPfodCse9bDLlxOiNILTCY/edit?usp=sharing)
 
