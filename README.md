@@ -91,7 +91,7 @@ El dataset contiene datos sobre las canciones más reproducidas en Spotify en 20
 
 ### 💻 [Procesamiento y preparación para analisis de datos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/tree/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos).
 
-1. [Importación y Creación de Tablas en BigQuery:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/1.%20Conectarimportar%20datos%20a%20otras%20herramientas.md#1-conectarimportar-datos-a-otras-herramientas)
+1. [Importación y Creación de Tablas en BigQuery:](https://github.com/jesolav/Validacion_Hipotesis_Proyecto_2_Laboratoria/blob/9b18f8a6d510e875659ca2f3772b59410602e5c3/1.%20Procesar%20y%20preparar%20base%20de%20datos/1.%20Conectar%20importar%20datos%20a%20otras%20herramientas.md)
 2. [Identificación y Manejo de Valores Nulos:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/2.%20Identificar%20y%20manejar%20valores%20nulos.md)
 3. [Manejo de Valores Duplicados:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/3.%20Manejo%20Duplicados.md)
 4. [Identificar y manejar datos fuera del alcance del análisis:](https://github.com/jesolav/Validaci-n-Hip-tesis_Proyecto-2/blob/8b49998a8745a5f15fb7156893002e8308d5197f/1.%20Procesar%20y%20preparar%20base%20de%20datos/4.%20Identificar%20y%20manejar%20datos%20fuera%20del%20alcance%20del%20analisis.md)
